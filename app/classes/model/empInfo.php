@@ -6,7 +6,7 @@ class EmpInfo extends \Model
 
     public static function get_info()
     {
-        $sql = "SELECT e.e_id , e.e_name1 , e.e_name2 , e.e_img , e.e_info , a.affiliation , p.position
+        $sql = "SELECT e.e_id , e.e_name11 , e.e_name12 ,e.e_name21 , e.e_name22 , e.e_img , e.e_info , a.affiliation , p.position
                     FROM employee e
                  INNER JOIN affiliation a ON e.a_id = a.a_id
                  INNER JOIN position p  ON e.p_id = p.p_id
@@ -14,7 +14,13 @@ class EmpInfo extends \Model
         $query = \DB::query($sql)->execute();
         return $query->as_array();
     }
-
+    public static function get_count()
+    {
+        $sql = "SELECT COUNT(*) AS count FROM employee
+                 where deleted='0'";
+        $query = \DB::query($sql)->execute();
+        return $query;
+    }
     public static function get_emp($e_id)
     {
         $sql = "SELECT * FROM employee where e_id='$e_id' and deleted='0' ";
@@ -24,7 +30,9 @@ class EmpInfo extends \Model
 
     public static function del_emp($e_id)
     {
-        $query = \DB::update('employee')->value('deleted', '1')->where('e_id', $e_id)->execute();
+        $query = \DB::update('employee')->value('deleted', '1')
+            ->where('e_id', $e_id)
+            ->execute();
         return $query;
     }
 

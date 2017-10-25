@@ -2,15 +2,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <?php echo Asset::css('bootstrap.min.css');?>
 <style type="text/css">
 table.gridtable {
-	font-family: verdana,arial,sans-serif;
-	font-size:14px;
-	color:#333333;
+	font-family: verdana, arial, sans-serif;
+	font-size: 14px;
+	color: #333333;
 	border-width: 0px;
 	border-color: #666666;
 	border-collapse: collapse;
 }
+
 table.gridtable th {
 	border-width: 0px;
 	padding: 8px;
@@ -18,6 +20,7 @@ table.gridtable th {
 	border-color: #666666;
 	background-color: #dedede;
 }
+
 table.gridtable td {
 	border-width: 0px;
 	padding: 8px;
@@ -25,14 +28,21 @@ table.gridtable td {
 	border-color: #666666;
 	background-color: #ffffff;
 }
+.h{font-size:120%;font-weight:bold}
+.div-up{ margin-top:4%}
+.current-page{ font-weight:bold}
 </style>
 </head>
+<title>社員情報確認</title>
 <body>
-<h4>社員情報確認</h4>
+<div class="div-up">
 	<form name="form1" method="post" action="">
-		<table width="60%" class="gridtable" >
+		<table width="60%" align="center" class="gridtable">
 			<tr>
-				<td width="30%"></td>
+				<td width="30%"><span class="h">社員情報確認</td>
+			</tr>
+			<tr>
+				<td width="30%">社員情報入力＞<span class="current-page">確認</span>＞完了</td>
 				<td width="30%"></td>
 				<td><?php echo Html::anchor('action/list.php','社員情報一覧','')?></td>
 			</tr>
@@ -43,14 +53,26 @@ table.gridtable td {
 			</tr>
 			<tr>
 				<td>社員氏名 (名字)</td>
-				<td><input type="text" name="e_name1" readonly="readonly"
-					style="border: 0" value="<?php echo $_GET['e_name1'];?>"></td>
+				<td><input type="text" name="e_name11" readonly="readonly"
+					style="border: 0" value="<?php echo $_GET['e_name11'];?>"></td>
+				<td>※必須 1-5文字</td>
+			</tr>
+			<tr>
+				<td>社員氏名 (名前)</td>
+				<td><input type="text" name="e_name12" readonly="readonly"
+					style="border: 0" value="<?php echo $_GET['e_name12'];?>"></td>
 				<td>※必須 1-5文字</td>
 			</tr>
 			<tr>
 				<td>社員カナ (名字)</td>
-				<td><input type="text" name="e_name2" readonly="readonly"
-					style="border: 0" value="<?php echo $_GET['e_name2'];?>"></td>
+				<td><input type="text" name="e_name21" readonly="readonly"
+					style="border: 0" value="<?php echo $_GET['e_name21'];?>"></td>
+				<td>※必須 1-5文字</td>
+			</tr>
+			<tr>
+				<td>社員カナ (名前)</td>
+				<td><input type="text" name="e_name22" readonly="readonly"
+					style="border: 0" value="<?php echo $_GET['e_name22'];?>"></td>
 				<td>※必須 1-5文字</td>
 			</tr>
 			<tr>
@@ -80,10 +102,10 @@ table.gridtable td {
 			</tr>
 			<tr>
 				<td align="center"><input onclick="history.go(-1)" type="button"
-					value="編集"></td>
-				<td align="left"><input type="submit" value="登録"></td>
+					value="編集" class='btn btn-primary' ></td>
+				<td align="left"><input type="submit" value="確認" class='btn btn-info'></td>
 			</tr>
 		</table>
-
+<div class="div-up">
 </body>
 </html>

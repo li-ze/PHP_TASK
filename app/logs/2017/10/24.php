@@ -515,3 +515,55 @@ WARNING - 2017-10-24 15:41:58 --> Fuel\Core\Fuel::init - The configured locale e
 WARNING - 2017-10-24 15:42:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2017-10-24 15:42:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2017-10-24 15:42:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:14:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:14:23 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:14:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:14:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:14:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:47:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 16:54:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:04:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:07:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:07:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:09:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:09:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:09:23 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:11:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:34:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:34:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:43:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2017-10-24 17:43:44 --> 1054 - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'e.e_name1' in 'field list' with query: "SELECT e.e_id , e.e_name1 , e.e_name2 , e.e_img , e.e_info , a.affiliation , p.position
+                    FROM employee e
+                 INNER JOIN affiliation a ON e.a_id = a.a_id
+                 INNER JOIN position p  ON e.p_id = p.p_id
+                 where deleted='0'" in C:\Users\t-zeri\Desktop\fuelphp-1.7.3\fuel\core\classes\database\pdo\connection.php on line 272
+WARNING - 2017-10-24 17:44:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:44:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:44:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:44:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2017-10-24 17:44:59 --> 1054 - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'e_name1' in 'field list' with query: "INSERT INTO `employee` (`e_id`, `e_name1`, `e_name2`, `a_id`, `p_id`, `e_img`, `e_info`) VALUES ('10036', null, null, (('112')), (('1')), '', '')" in C:\Users\t-zeri\Desktop\fuelphp-1.7.3\fuel\core\classes\database\pdo\connection.php on line 272
+WARNING - 2017-10-24 17:47:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2017-10-24 17:47:45 --> Notice - Undefined variable: e_name1 in C:\Users\t-zeri\git\PHP_TASK\app\classes\controller\action.php on line 92
+WARNING - 2017-10-24 17:48:08 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:48:08 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:48:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:48:20 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2017-10-24 17:48:20 --> Notice - Undefined index: e_name1 in C:\Users\t-zeri\git\PHP_TASK\app\views\action\edit.php on line 43
+WARNING - 2017-10-24 17:51:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2017-10-24 17:51:27 --> Notice - Undefined index: e_name１1 in C:\Users\t-zeri\git\PHP_TASK\app\views\action\edit.php on line 43
+WARNING - 2017-10-24 17:51:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:51:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:51:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:51:53 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:51:53 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:51:57 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:52:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2017-10-24 17:52:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
