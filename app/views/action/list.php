@@ -13,6 +13,9 @@ table.gridtable {
 	border-color: #666666;
 	border-collapse: collapse;
 	margin-top:11;
+    margin-left: auto;
+    margin-right: auto;
+	width: 70%;
 }
 
 table.gridtable th {
@@ -35,6 +38,17 @@ table.count {
 	font-family: verdana, arial, sans-serif;
 	font-size: 14px;
 	margin-top: 9;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	}
+table.no {
+	font-family: verdana, arial, sans-serif;
+	font-size: 14px;
+	margin-top: 9;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 	}
 .div-up{ margin-top:4%}
 </style>
@@ -51,7 +65,7 @@ table.count {
 			<td align="right"><?php echo Html::anchor('action/regist.php','社員情報入力')?></td>
 		</tr>
 	</table>
-	<table class="gridtable" align="center" width=70%>
+	<table class="gridtable" >
 		<div class="btn-group">
         <?php
         if (! empty($info)) {
@@ -82,14 +96,14 @@ table.count {
             }
             echo "</table>";
             foreach ($count as $counts) {
-                echo "<table class='count' align='center' width=70%>";
+                echo "<table class='count'>";
                 echo "<tr>";
                 echo "<td>{$counts['count']}件数<td>";
                 echo "</tr>";
                 echo "</table>";
             }
         } else {
-            echo "<table class='gridtable' align='center' width=90%>";
+            echo "<table class='no'>";
             echo "<tr>";
             echo "<td>データが存在しません。<td>";
             echo "</tr>";
