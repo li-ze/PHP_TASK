@@ -32,7 +32,7 @@ class Controller_Employee extends \Fuel\Core\Controller{
 	    $affiliations = \Model\Affiliation::list_affiliation()->as_array();
         $data['positions']=$positions;
         $data['affiliations']=$affiliations;
-
+test！
         if($mark == 'insert'){
             $data['p_id'] = Input::param('p_id');
             $data['a_id'] = Input::param('a_id');
