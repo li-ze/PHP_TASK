@@ -90,8 +90,8 @@ class Controller_Employee extends \Fuel\Core\Controller{
         $e_name12 = Input::param('e_name12');
         $e_name21 = Input::param('e_name21');
         $e_name22 = Input::param('e_name22');
-        $affiliation = Affiliation::get_affiliation($a_id)[0]['affiliation'];
-        $position = Position::get_position($p_id)[0]['position'];
+        $affiliation = Affiliation::get_affiliation($a_id)['affiliation'];
+        $position = Position::get_position($p_id)['position'];
         $data =array(
             'p_id'=>$p_id,
             'a_id'=>$a_id,
